@@ -1,4 +1,4 @@
-# Gulp, PIXI & TypeScript
+# PIXI.js, Gulp and TypeScript
 
 Example project for using Gulp, PIXI & TypeScript.
 
