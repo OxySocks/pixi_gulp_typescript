@@ -39435,13 +39435,13 @@ var Game = function Game() {
 
     this.app = new PIXI.Application(800, 600, { backgroundColor: 0x1099bb });
     document.body.appendChild(this.app.view);
-    this.bunny = PIXI.Sprite.fromImage("img/bunny.png");
-    this.bunny.anchor.set(0.5);
-    this.bunny.x = this.app.renderer.width / 2;
-    this.bunny.y = this.app.renderer.height / 2;
-    this.app.stage.addChild(this.bunny);
+    this.square = PIXI.Sprite.fromImage("img/square.png");
+    this.square.anchor.set(0.5);
+    this.square.x = this.app.renderer.width / 2;
+    this.square.y = this.app.renderer.height / 2;
+    this.app.stage.addChild(this.square);
     this.app.ticker.add(function (delta) {
-        _this.bunny.rotation += 0.1 / delta;
+        _this.square.rotation += 0.1 / delta;
     });
 };
 
